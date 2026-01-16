@@ -15,7 +15,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -444,9 +444,8 @@ QUALITY WORK ↓
 }
 
 .quality__img {
-    width: 50%; 
+    width: 100%; 
     height: auto;
-    max-width: 600px;
     margin-right: 48px;
    z-index: 10;
    margin-right: 80px;
@@ -455,6 +454,7 @@ QUALITY WORK ↓
 
 
 .quality__img--wrapper{
+    width: 50%;
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
     position: relative;
@@ -495,10 +495,28 @@ STEPS ↓
 */
 
 
-#steps .row {
+#steps .row__steps {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+.steps__img--wrapper {
+    position: relative;
+
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__grid {
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 
