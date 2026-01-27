@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
-    color: #243e63;
+
 }
 
 body {
@@ -39,6 +39,10 @@ section {
 
 main {
     margin-bottom: 96px;
+}
+
+.button {
+    cursor: pointer;
 }
 
 
@@ -730,6 +734,7 @@ PRICING ↓
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    padding-left: 45px;
 }
 
 .price__cards {
@@ -1003,8 +1008,7 @@ TESTIMONIALS ↓
 .test__text--wrapper {
     display: flex;
     flex-direction: column;
-    
-    width: 50%;
+    width: 60%;
 }
 
 .test__section {
@@ -1047,9 +1051,11 @@ TESTIMONIALS ↓
     font-weight: 500;
 }
 
-.test__img--wrapper {
+.test__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .test__client--wrapper {
@@ -1064,12 +1070,52 @@ TESTIMONIALS ↓
 }
 
 .test__client--info {
-    padding-left: 16px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+
 }
 
 .test__client--name {
     font-size: 18px;
     font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.test__client--position {
+    font-size: 16px;
+    color: grey;
+    font-weight: 500;
+}
+
+.test__arrow--wrapper {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.test__arrow--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    margin-right: 12px;
+    padding: 16px;
+    width: 48px;
+    height: 48px;
+
+}
+
+.test__arrow--svg {
+    width: 16px;
+   
+   
+}
+
+.button__divider {
+    width: 32px;
 }
 
 
@@ -1082,10 +1128,50 @@ START / CALL TO ACTION ↓
 
 
 
-#start .row {
+#start .row__start {
     position: relative;
     overflow: hidden;
 }
+
+.row__container {
+    background-color: #6415ff;
+    width: auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.start__text {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 32px;
+    max-width: 50%;
+}
+
+.start__button--red {
+    background-color: #f56565;
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 20px 40px;
+    font-weight: 700;
+}
+
+.start__button--purple {
+    background-color: #6415ff;
+    color: white;
+    border-color: white;
+    border-radius: 500px;
+    padding: 20px 40px;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+
+
 
 
 /* 
@@ -1096,12 +1182,108 @@ FOOTER ↓
 
 
 footer {
+    height: 500px;
     padding: 96px 32px;
     background-color: rgb(100, 21, 255);
     margin-bottom: -32px;
     position: relative;
     overflow: hidden;
 }
+
+.footer__row {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    max-height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+.footer__main {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer__subtitle {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer__item {
+    padding-bottom: 16px; 
+    font-weight: 500;
+}
+
+.footer__bottom {
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+    
+}
+
+.footer__img--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer__img {
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+}
+
+.footer__text {
+    color: white;
+    padding-left: 16px;
+    font-weight: 600;
+    padding-right: 285px;
+}
+
+.footer__line {
+    padding-top: 70px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.footer__social--wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 280px;
+}
+
+.footer__face {
+    width: 40x;
+    height: 20px;
+    margin-right: 24px;
+}
+
+.footer__twitter {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__copyright {
+    color: lightgrey;
+}
+
+
+
+
+
 
 
 /* 
