@@ -445,6 +445,7 @@ QUALITY WORK ↓
     width: 50%;
     max-width: 576px;
     margin: 16px;
+    padding-right: 90px;
 }
 
 .quality__tag {
@@ -524,7 +525,6 @@ QUALITY WORK ↓
 }
 
 .quality__section--wrapper {
-
     display: flex;
 }
 
@@ -1628,8 +1628,11 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .quality__section--wrapper {
-        margin-left: 200px;
-        max-width: 1000px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .quality__title {
@@ -1653,6 +1656,15 @@ MOBILE RESPONSIVENESS ↓
         z-index: 10;
         max-width: 560px;
         position: relative;
+    }
+
+    .quality__grid {
+        transform: translateX(47%) translateY(50%) scaleX(1) scaleY(1);
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
+        display: block;
     }
 
     .steps__title {
@@ -1701,6 +1713,10 @@ MOBILE RESPONSIVENESS ↓
     .row__start {
         max-width: 1100px;
         margin-left: 160px;
+    }
+
+    .start__container {
+        margin-right: 160px;
     }
 
     .footer__line {
@@ -1880,7 +1896,11 @@ MOBILE RESPONSIVENESS ↓
         padding-left: 0px;
     }
 
-    
+    #quality {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .quality__section--wrapper {
         margin-left: 60px;
     }
@@ -1966,14 +1986,12 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .values__main {
-        text-align: center;
         max-width: 350px;
         font-size: 30px;
     }
 
     .values__content {
         max-width: 800px;
-        text-align: center;
     }
 
     .values__para {
@@ -1985,6 +2003,10 @@ MOBILE RESPONSIVENESS ↓
         display: flex;
         justify-content: center;
     }
+
+    .row__pricing  {
+        margin-left: 50px;
+    } 
 
     .price__cards {
         width: 250px;
